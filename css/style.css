@@ -1,0 +1,224 @@
+
+
+img {
+  max-width: 100%;
+}
+
+/*********************
+nav-container
+**********************/
+.nav-container {
+  margin: 0 auto;
+  max-width: 1000px;
+  height: 64px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.nav-container a {
+  margin-left: 16px;
+}
+
+
+/*********************
+main-visual
+*********************/
+
+.main-visual {
+  width: 100%;
+  height: 700px;
+  background-image: url('../img/001.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-visual h2 {
+  font-size: 38px;
+  color: #b05902;
+  font-weight: bold;
+}
+
+
+/*********************
+ranking
+*********************/
+
+.ranking {
+  padding: 100px 0;
+  /* width: 1000px; */
+  max-width: 1000px;
+  height: 740px;
+  margin: 0 auto;
+}
+
+.ranking h2 {
+  margin-bottom: 48px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.ranking-containar {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.ranking-item {
+  margin-bottom: 48px;
+  width: 23%;
+  position: relative;
+}
+
+.ranking-item h3 {
+  margin-top: 12px;
+  text-align: center;
+}
+
+.ranking-num {
+  width: 32px;
+  height: 32px;
+  background: #c60303;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -6px;
+  right: -6px;
+}
+
+/*********************
+news
+*********************/
+
+.news {
+  padding: 100px 0;
+  width: 100%;
+  height: 600px;
+  background: #f7acd855;
+}
+
+.news h2 {
+  margin-bottom: 48px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.news-containar {
+  width: 720px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+
+.news-item {
+  padding: 0 12px;
+  margin-top: 15px;
+  height: 64px;
+  border-bottom: 1px dotted black;
+  display: flex;
+  align-items: center;
+}
+
+.news-text {
+  display: flex;
+}
+
+.news-item a {
+  width: 100%;
+  align-items: center;
+}
+
+.news-item p {
+  margin-right: 120px;
+}
+
+
+/*********************
+footer
+*********************/
+
+.footer {
+  width: 100%;
+  height: 300px;
+  background: #c60303;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer p {
+  color: white;
+}
+
+
+/* iPhoneSEを基準に */
+@media screen and (max-width: 768px) {
+
+  /*********************
+  nav-container 
+  **********************/
+  .nav-container {
+    padding: 32px 0;
+    height: 120px;
+    flex-direction: column;
+  }
+
+  /*********************
+  main-visual
+  *********************/
+
+  .main-visual h2 {
+    font-size: 20px;
+  }
+  
+
+
+  /*********************
+  ranking
+  *********************/
+
+  .ranking {
+    width: 95%;
+    height: 100%;
+  }
+
+  .ranking-containar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ranking-item {
+    margin-bottom: 48px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+  }
+
+
+  /*********************
+  news
+  *********************/
+
+  .news-containar {
+    width: 95%;
+  }
+
+  .news-item p {
+    margin-right: 10px;
+    font-size: 15px;
+  }
+
+}
